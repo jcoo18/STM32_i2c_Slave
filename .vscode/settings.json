@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "stm32_i2c_slave_code": "c"
+    }
+}
