@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<heightmap MinX="0" MinY="0" MaxX="20" MaxY="15" SizeX="5" SizeY="4">
+  <point X="0" Y="0">-0.006</point>
+  <point X="0" Y="1">-0.005</point>
+  <point X="0" Y="2">0.001</point>
+  <point X="0" Y="3">0.006</point>
+  <point X="1" Y="0">-0.004</point>
+  <point X="1" Y="1">-0.004</point>
+  <point X="1" Y="2">-0.011</point>
+  <point X="1" Y="3">0.006</point>
+  <point X="2" Y="0">-0.005</point>
+  <point X="2" Y="1">-0.005</point>
+  <point X="2" Y="2">0.001</point>
+  <point X="2" Y="3">0.006</point>
+  <point X="3" Y="0">-0.005</point>
+  <point X="3" Y="1">-0.005</point>
+  <point X="3" Y="2">0.000</point>
+  <point X="3" Y="3">0.004</point>
+  <point X="4" Y="0">-0.010</point>
+  <point X="4" Y="1">-0.010</point>
+  <point X="4" Y="2">-0.005</point>
+  <point X="4" Y="3">0.000</point>
+</heightmap>
