@@ -56,7 +56,7 @@ const byte PulsesPerRevolutionSpeed = 2;  // Set how many pulses there are on ea
 // The unit is in microseconds.
 const unsigned long ZeroTimeout = 100000;  // For high response time, a good value would be 100000.
                                            // For reading very low RPM, a good value would be 300000.
-const unsigned long ZeroTimeoutSpeed = 100000;  // Sensor 2
+const unsigned long ZeroTimeoutSpeed = 2000000;  // Sensor 2
 
 // Calibration for smoothing RPM:
 const byte numReadings = 2;  // Number of samples for smoothing. The higher, the more smoothing, but it's going to
@@ -67,7 +67,7 @@ const byte numReadingsSpeed = 2;  // Sensor 2
 // Variables:
 /////////////
 
-//////////// Sensor 1:
+//////////// RPM Sensor:
 
 volatile unsigned long LastTimeWeMeasured;  // Stores the last time we measured a pulse so we can calculate the period.
 volatile unsigned long PeriodBetweenPulses = ZeroTimeout+1000;  // Stores the period between pulses in microseconds.
