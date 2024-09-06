@@ -96,7 +96,7 @@ unsigned long CurrentMicros = micros();  // Stores the micros in that cycle.
 // With a value around 10 you will get a very accurate result at high speeds, but readings at lower speeds are going to be
 // farther from eachother making it less "real time" at those speeds.
 // There's a function that will set the value depending on the speed so this is done automatically.
-unsigned int AmountOfReadings = 1;
+unsigned int AmountOfReadings = 6;
 
 unsigned int ZeroDebouncingExtra;  // Stores the extra value added to the ZeroTimeout to debounce it.
                                    // The ZeroTimeout needs debouncing so when the value is close to the threshold it
@@ -141,7 +141,7 @@ unsigned long CurrentMicrosSpeed = micros();  // Stores the micros in that cycle
 // With a value around 10 you will get a very accurate result at high speeds, but readings at lower speeds are going to be
 // farther from eachother making it less "real time" at those speeds.
 // There's a function that will set the value depending on the speed so this is done automatically.
-unsigned int AmountOfReadingsSpeed = 1;
+unsigned int AmountOfReadingsSpeed = 6;
 
 unsigned int ZeroDebouncingExtraSpeed;  // Stores the extra value added to the ZeroTimeout to debounce it.
                                    // The ZeroTimeout needs debouncing so when the value is close to the threshold it
@@ -213,8 +213,7 @@ void setup()
 void loop()
 {
   
-  ////// Sensor 1:
-  
+  ////// Sensor 1 (RPM):
   // The following is going to store the two values that might change in the middle of the cycle.
   // We are going to do math and functions with those values and they can create glitches if they change in the
   // middle of the cycle.
@@ -268,6 +267,7 @@ void loop()
   // Calculate the average:
   averageRPM = total / numReadings;  // The average value it's the smoothed result.
   if (averageRPM > maxRPM) averageRPM = maxRPM;
+
 
   /********************** Speed: */ 
 
